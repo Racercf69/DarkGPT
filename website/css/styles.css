@@ -494,6 +494,33 @@ p { line-height: 1.7; }
 }
 .service-card__link:hover { color: var(--pink-dark); }
 
+.services__category-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pink-dark);
+  margin-bottom: 1.25rem;
+  padding-left: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.services__category-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--pink-mid), transparent);
+}
+
+.services__grid--pedicures {
+  grid-template-columns: repeat(3, 1fr);
+}
+.services__grid--mani {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+}
+
 .services__note {
   margin-top: 2.5rem;
   background: var(--gold-light);
@@ -1078,6 +1105,7 @@ p { line-height: 1.7; }
 ============================================================ */
 @media (max-width: 1024px) {
   .trust-bar__grid { grid-template-columns: repeat(2, 1fr); }
+  .services__grid--pedicures { grid-template-columns: 1fr 1fr; }
   .gallery__grid { grid-template-columns: repeat(3, 1fr); }
   .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
   .footer__inner { grid-template-columns: 1fr 1fr; }
@@ -1124,6 +1152,8 @@ p { line-height: 1.7; }
   /* Services */
   .form-row { grid-template-columns: 1fr; }
   .services__grid { grid-template-columns: 1fr; }
+  .services__grid--pedicures { grid-template-columns: 1fr; }
+  .services__grid--mani { grid-template-columns: 1fr; max-width: 100%; }
 
   /* Steps */
   .steps { flex-direction: column; align-items: center; gap: 2rem; }

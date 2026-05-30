@@ -85,14 +85,13 @@
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Nail Services",
+      "name": "Mobile Nail Services",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Classic Manicure"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel Manicure"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Acrylic Full Set"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Classic Pedicure"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel Pedicure"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nail Art"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Essential Mobile Pedicure"}, "price": "75", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Comfort & Renew Pedicure"}, "price": "105", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Restore & Relax Signature Pedicure"}, "price": "125", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Structured Gel Manicure"}, "price": "115", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel-X Full Set"}, "price": "145", "priceCurrency": "USD"}
       ]
     },
     "aggregateRating": {
@@ -231,7 +230,7 @@
         </h1>
         <p class="hero__sub">
           Licensed mobile nail technician serving <strong>Chico, Paradise, Magalia, Oroville &amp; Gridley, CA</strong>.
-          Salon-quality gel nails, acrylics, manicures &amp; pedicures — at your home, office, or event.
+          Structured gel manicures, Gel-X extensions &amp; luxury pedicures — at your home, office, or event.
         </p>
         <div class="hero__actions">
           <a href="#booking" class="btn btn--primary btn--lg">
@@ -311,140 +310,52 @@
         <div class="section__header">
           <div class="section__tag">What We Offer</div>
           <h2>Nail Services in Chico &amp; Butte County</h2>
-          <p>All services performed at your location with professional-grade products. Prices below — contact us to confirm current rates or add-ons.</p>
+          <p>Every service is performed at your location using professional-grade products. All prices are all-inclusive — no hidden fees, no salon upcharge.</p>
         </div>
 
-        <div class="services__tabs">
-          <button class="tab-btn active" data-tab="manicures">Manicures</button>
-          <button class="tab-btn" data-tab="pedicures">Pedicures</button>
-          <button class="tab-btn" data-tab="enhancements">Enhancements</button>
-          <button class="tab-btn" data-tab="addons">Add-Ons</button>
-        </div>
-
-        <div class="services__grid" id="tab-manicures">
-          <article class="service-card">
-            <div class="service-card__icon">💅</div>
-            <h3>Classic Manicure</h3>
-            <p>Shape, cuticle care, hand massage, and your choice of regular polish.</p>
-            <div class="service-card__price">From $30</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card featured">
-            <div class="service-card__badge">Most Popular</div>
-            <div class="service-card__icon">💎</div>
-            <h3>Gel Manicure</h3>
-            <p>Long-lasting gel color with UV cure — chip-free for 2–3 weeks. Shape, cuticle care included.</p>
-            <div class="service-card__price">From $45</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">✨</div>
-            <h3>Dip Powder Manicure</h3>
-            <p>Durable dip powder for strength and shine without UV light. Lasts up to 4 weeks.</p>
-            <div class="service-card__price">From $50</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">🎨</div>
-            <h3>Nail Art Manicure</h3>
-            <p>Custom nail art designs — from simple florals to detailed 3D art. Tell us your vision!</p>
-            <div class="service-card__price">From $55+</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-        </div>
-
-        <div class="services__grid hidden" id="tab-pedicures">
+        <div class="services__category-label">Pedicures</div>
+        <div class="services__grid services__grid--pedicures">
           <article class="service-card">
             <div class="service-card__icon">🦶</div>
-            <h3>Classic Pedicure</h3>
-            <p>Soak, nail shaping, cuticle care, callus removal, massage, and polish of your choice.</p>
-            <div class="service-card__price">From $45</div>
+            <h3>Essential Mobile Pedicure</h3>
+            <p>The perfect pedicure delivered to your door. Nail shaping, cuticle care, callus removal, relaxing foot &amp; lower-leg massage, and your choice of polish. Everything you need, done right.</p>
+            <div class="service-card__price">$75</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
           <article class="service-card featured">
-            <div class="service-card__badge">Best Value</div>
+            <div class="service-card__badge">Client Favorite</div>
             <div class="service-card__icon">🌸</div>
-            <h3>Spa Pedicure</h3>
-            <p>Everything in classic plus exfoliating scrub, extended massage, and hot towel wrap.</p>
-            <div class="service-card__price">From $65</div>
+            <h3>Comfort &amp; Renew Pedicure</h3>
+            <p>A deeply restorative experience. Extended warm soak, exfoliating sugar scrub, hot towel wrap, callus treatment, extended massage, and long-lasting gel polish. You'll feel brand new.</p>
+            <div class="service-card__price">$105</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card featured">
+            <div class="service-card__badge">Signature Service</div>
+            <div class="service-card__icon">👑</div>
+            <h3>Restore &amp; Relax Signature Pedicure</h3>
+            <p>Olya's premium offering. Full nail restoration, deep-conditioning mask, hot stone massage, exfoliating treatment, and a flawless gel finish. The ultimate in at-home luxury — nothing compares.</p>
+            <div class="service-card__price">$125</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+        </div>
+
+        <div class="services__category-label" style="margin-top:2.5rem;">Manicures &amp; Extensions</div>
+        <div class="services__grid services__grid--mani">
+          <article class="service-card featured">
+            <div class="service-card__badge">Most Requested</div>
+            <div class="service-card__icon">💅</div>
+            <h3>Structured Gel Manicure</h3>
+            <p>A precision gel manicure built with structured gel for strength, flexibility, and lasting shape. Nail prep, cuticle care, structure application, gel color of your choice, and a flawless finish. Chip-free &amp; nail-healthy.</p>
+            <div class="service-card__price">$115</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
           <article class="service-card">
             <div class="service-card__icon">💎</div>
-            <h3>Gel Pedicure</h3>
-            <p>Long-lasting gel color on your toes. Perfect for summer or special events. Chip-free finish.</p>
-            <div class="service-card__price">From $60</div>
+            <h3>Gel-X Full Set</h3>
+            <p>Soft gel extensions applied directly over your natural nails — no drills, no harsh filing, no damage. Beautiful length and shape with the health benefits of gel. Available in a wide range of lengths and shapes.</p>
+            <div class="service-card__price">$145</div>
             <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">👑</div>
-            <h3>Deluxe Spa Pedicure</h3>
-            <p>The full luxury experience: soak, scrub, mask, hot stones, extended massage &amp; gel polish.</p>
-            <div class="service-card__price">From $85</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-        </div>
-
-        <div class="services__grid hidden" id="tab-enhancements">
-          <article class="service-card featured">
-            <div class="service-card__badge">Most Popular</div>
-            <div class="service-card__icon">💪</div>
-            <h3>Acrylic Full Set</h3>
-            <p>Strong, durable acrylic nails in your desired length and shape. Natural or tips.</p>
-            <div class="service-card__price">From $65</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">🔄</div>
-            <h3>Acrylic Fill</h3>
-            <p>Fill in the grow-out of your existing acrylic set. Recommended every 2–3 weeks.</p>
-            <div class="service-card__price">From $40</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">🌟</div>
-            <h3>Builder Gel Full Set</h3>
-            <p>Flexible, lightweight builder gel extensions. Stronger than gel polish, lighter than acrylics.</p>
-            <div class="service-card__price">From $70</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">❌</div>
-            <h3>Soak-Off / Removal</h3>
-            <p>Safe, gentle removal of gel, dip, or acrylic without damaging your natural nails.</p>
-            <div class="service-card__price">From $20</div>
-            <a href="#booking" class="service-card__link">Book This</a>
-          </article>
-        </div>
-
-        <div class="services__grid hidden" id="tab-addons">
-          <article class="service-card">
-            <div class="service-card__icon">🎨</div>
-            <h3>Nail Art (per nail)</h3>
-            <p>Custom designs, patterns, or seasonal art added to any service.</p>
-            <div class="service-card__price">$5–$15/nail</div>
-            <a href="#booking" class="service-card__link">Add to Booking</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">✨</div>
-            <h3>Chrome Powder</h3>
-            <p>Mirror-chrome or holographic finish over gel. Stunning reflective effect.</p>
-            <div class="service-card__price">+$10</div>
-            <a href="#booking" class="service-card__link">Add to Booking</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">🕯️</div>
-            <h3>Paraffin Wax Treatment</h3>
-            <p>Deeply moisturizing warm paraffin dip for hands or feet. Ultra-soft results.</p>
-            <div class="service-card__price">+$15</div>
-            <a href="#booking" class="service-card__link">Add to Booking</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon">🔧</div>
-            <h3>Nail Repair</h3>
-            <p>Fix a broken nail without redoing the whole set. Quick and seamless repair.</p>
-            <div class="service-card__price">$5/nail</div>
-            <a href="#booking" class="service-card__link">Add to Booking</a>
           </article>
         </div>
 
@@ -747,7 +658,7 @@
           </details>
           <details class="faq__item">
             <summary>What mobile nail services do you offer?</summary>
-            <p>We offer classic manicures, gel manicures, dip powder, acrylic full sets and fills, builder gel, classic and spa pedicures, gel pedicures, nail art, chrome powder, paraffin wax, and more — all at your location.</p>
+            <p>We offer three signature pedicures (Essential Mobile Pedicure, Comfort &amp; Renew, and the Restore &amp; Relax Signature Pedicure), a Structured Gel Manicure, and Gel-X Full Set extensions — all performed at your location in Butte County.</p>
           </details>
           <details class="faq__item">
             <summary>How do I book a mobile nail appointment?</summary>
@@ -867,28 +778,18 @@
               <label for="service">Service Requested <span aria-hidden="true">*</span></label>
               <select id="service" name="service" required>
                 <option value="" disabled selected>— Select a service —</option>
-                <optgroup label="Manicures">
-                  <option value="Classic Manicure">Classic Manicure</option>
-                  <option value="Gel Manicure">Gel Manicure</option>
-                  <option value="Dip Powder Manicure">Dip Powder Manicure</option>
-                  <option value="Nail Art Manicure">Nail Art Manicure</option>
-                </optgroup>
                 <optgroup label="Pedicures">
-                  <option value="Classic Pedicure">Classic Pedicure</option>
-                  <option value="Spa Pedicure">Spa Pedicure</option>
-                  <option value="Gel Pedicure">Gel Pedicure</option>
-                  <option value="Deluxe Spa Pedicure">Deluxe Spa Pedicure</option>
+                  <option value="Essential Mobile Pedicure — $75">Essential Mobile Pedicure — $75</option>
+                  <option value="Comfort &amp; Renew Pedicure — $105">Comfort &amp; Renew Pedicure — $105 ⭐</option>
+                  <option value="Restore &amp; Relax Signature Pedicure — $125">Restore &amp; Relax Signature Pedicure — $125 ⭐</option>
                 </optgroup>
-                <optgroup label="Enhancements">
-                  <option value="Acrylic Full Set">Acrylic Full Set</option>
-                  <option value="Acrylic Fill">Acrylic Fill</option>
-                  <option value="Builder Gel Full Set">Builder Gel Full Set</option>
-                  <option value="Soak-Off / Removal">Soak-Off / Removal</option>
+                <optgroup label="Manicures &amp; Extensions">
+                  <option value="Structured Gel Manicure — $115">Structured Gel Manicure — $115 ⭐</option>
+                  <option value="Gel-X Full Set — $145">Gel-X Full Set — $145</option>
                 </optgroup>
-                <optgroup label="Combos &amp; Events">
-                  <option value="Mani + Pedi Combo">Mani + Pedi Combo</option>
-                  <option value="Group / Event Booking">Group / Event Booking</option>
-                  <option value="Other / Not Sure">Other / Not Sure</option>
+                <optgroup label="Events &amp; Other">
+                  <option value="Group / Event Booking (multiple services)">Group / Event Booking</option>
+                  <option value="Not sure — need a recommendation">Not Sure — Need a Recommendation</option>
                 </optgroup>
               </select>
               <span class="form-error" id="service-error"></span>

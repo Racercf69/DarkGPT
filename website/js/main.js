@@ -53,26 +53,6 @@ if (hamburger && nav) {
   });
 }
 
-// ---- Service tabs ----
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabPanels = {
-  manicures:    document.getElementById('tab-manicures'),
-  pedicures:    document.getElementById('tab-pedicures'),
-  enhancements: document.getElementById('tab-enhancements'),
-  addons:       document.getElementById('tab-addons'),
-};
-
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.tab;
-    tabBtns.forEach(b => b.classList.toggle('active', b === btn));
-    Object.entries(tabPanels).forEach(([key, panel]) => {
-      if (!panel) return;
-      panel.classList.toggle('hidden', key !== target);
-    });
-  });
-});
-
 // ---- Scroll reveal ----
 const reveals = document.querySelectorAll(
   '.service-card, .step, .testimonial, .city-list li, .faq__item, .trust-bar__item, .gallery__item'
