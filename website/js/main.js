@@ -53,6 +53,21 @@ if (hamburger && nav) {
   });
 }
 
+// ---- Service tabs ----
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabIds = ['pedicures', 'manicures', 'gelx', 'combos', 'addons'];
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.tab;
+    tabBtns.forEach(b => b.classList.toggle('active', b === btn));
+    tabIds.forEach(id => {
+      const panel = document.getElementById(`tab-${id}`);
+      if (panel) panel.classList.toggle('hidden', id !== target);
+    });
+  });
+});
+
 // ---- Scroll reveal ----
 const reveals = document.querySelectorAll(
   '.service-card, .step, .testimonial, .city-list li, .faq__item, .trust-bar__item, .gallery__item'

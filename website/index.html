@@ -90,8 +90,13 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Essential Mobile Pedicure"}, "price": "75", "priceCurrency": "USD"},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Comfort & Renew Pedicure"}, "price": "105", "priceCurrency": "USD"},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Restore & Relax Signature Pedicure"}, "price": "125", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Senior-Friendly Comfort Pedicure"}, "price": "105", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile Manicure"}, "price": "55", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel Mobile Manicure"}, "price": "80", "priceCurrency": "USD"},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Structured Gel Manicure"}, "price": "115", "priceCurrency": "USD"},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel-X Full Set"}, "price": "145", "priceCurrency": "USD"}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel-X Full Set"}, "price": "145", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel-X Refresh / Fill"}, "price": "95", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel-X Removal + Nail Recovery Treatment"}, "price": "40", "priceCurrency": "USD"}
       ]
     },
     "aggregateRating": {
@@ -310,57 +315,330 @@
         <div class="section__header">
           <div class="section__tag">What We Offer</div>
           <h2>Nail Services in Chico &amp; Butte County</h2>
-          <p>Every service is performed at your location using professional-grade products. All prices are all-inclusive — no hidden fees, no salon upcharge.</p>
+          <p>Every service is performed at your location. All-inclusive pricing — no hidden fees, no salon upcharge, no tip pressure.</p>
         </div>
 
-        <div class="services__category-label">Pedicures</div>
-        <div class="services__grid services__grid--pedicures">
+        <div class="services__tabs">
+          <button class="tab-btn active" data-tab="pedicures">Pedicures</button>
+          <button class="tab-btn" data-tab="manicures">Manicures</button>
+          <button class="tab-btn" data-tab="gelx">Gel-X</button>
+          <button class="tab-btn" data-tab="combos">Combos</button>
+          <button class="tab-btn" data-tab="addons">Add-Ons</button>
+        </div>
+
+        <!-- ===== PEDICURES ===== -->
+        <div class="services__grid" id="tab-pedicures">
           <article class="service-card">
-            <div class="service-card__icon">🦶</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">🦶</div>
+              <span class="service-card__duration">~60 min</span>
+            </div>
             <h3>Essential Mobile Pedicure</h3>
-            <p>The perfect pedicure delivered to your door. Nail shaping, cuticle care, callus removal, relaxing foot &amp; lower-leg massage, and your choice of polish. Everything you need, done right.</p>
+            <ul class="service-card__includes">
+              <li>Warm soak</li>
+              <li>Nail shaping</li>
+              <li>Gentle cuticle care</li>
+              <li>Light callus smoothing</li>
+              <li>Hydration treatment</li>
+              <li>Polish application</li>
+            </ul>
             <div class="service-card__price">$75</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
           <article class="service-card featured">
-            <div class="service-card__badge">Client Favorite</div>
-            <div class="service-card__icon">🌸</div>
+            <div class="service-card__badge">Most Popular</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">🌸</div>
+              <span class="service-card__duration">~75–80 min</span>
+            </div>
             <h3>Comfort &amp; Renew Pedicure</h3>
-            <p>A deeply restorative experience. Extended warm soak, exfoliating sugar scrub, hot towel wrap, callus treatment, extended massage, and long-lasting gel polish. You'll feel brand new.</p>
+            <ul class="service-card__includes">
+              <li>Everything in Essential</li>
+              <li>Exfoliating sugar scrub</li>
+              <li>Warm towel wrap</li>
+              <li>Extended relaxation massage</li>
+              <li>Enhanced hydration treatment</li>
+            </ul>
             <div class="service-card__price">$105</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
           <article class="service-card featured">
-            <div class="service-card__badge">Signature Service</div>
-            <div class="service-card__icon">👑</div>
+            <div class="service-card__badge">Premium Wellness</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">👑</div>
+              <span class="service-card__duration">~90 min</span>
+            </div>
             <h3>Restore &amp; Relax Signature Pedicure</h3>
-            <p>Olya's premium offering. Full nail restoration, deep-conditioning mask, hot stone massage, exfoliating treatment, and a flawless gel finish. The ultimate in at-home luxury — nothing compares.</p>
+            <ul class="service-card__includes">
+              <li>Everything in Comfort &amp; Renew</li>
+              <li>Mineral soak</li>
+              <li>CBD relaxation massage</li>
+              <li>Extended massage</li>
+              <li>Luxury warm towel ritual</li>
+            </ul>
             <div class="service-card__price">$125</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
+          <article class="service-card service-card--senior">
+            <div class="service-card__badge service-card__badge--teal">Senior-Friendly</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">💙</div>
+              <span class="service-card__duration">~75–90 min</span>
+            </div>
+            <h3>Senior-Friendly Comfort Pedicure</h3>
+            <p class="service-card__note">Gentle, comfort-focused care for sensitive feet and those who need extra time and attention.</p>
+            <ul class="service-card__includes">
+              <li>Extra appointment time</li>
+              <li>Sensitive-foot care approach</li>
+              <li>Comfort-first technique</li>
+              <li>Full pedicure service</li>
+            </ul>
+            <div class="service-card__price">$105</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
         </div>
 
-        <div class="services__category-label" style="margin-top:2.5rem;">Manicures &amp; Extensions</div>
-        <div class="services__grid services__grid--mani">
+        <!-- ===== MANICURES ===== -->
+        <div class="services__grid hidden" id="tab-manicures">
+          <article class="service-card">
+            <div class="service-card__meta">
+              <div class="service-card__icon">💅</div>
+              <span class="service-card__duration">~45–60 min</span>
+            </div>
+            <h3>Mobile Manicure</h3>
+            <ul class="service-card__includes">
+              <li>Nail shaping</li>
+              <li>Gentle cuticle care</li>
+              <li>Hydration treatment</li>
+              <li>Polish application</li>
+            </ul>
+            <div class="service-card__price">$55</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
           <article class="service-card featured">
-            <div class="service-card__badge">Most Requested</div>
-            <div class="service-card__icon">💅</div>
+            <div class="service-card__badge">Client Favorite</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">✨</div>
+              <span class="service-card__duration">~60–75 min</span>
+            </div>
+            <h3>Gel Mobile Manicure</h3>
+            <ul class="service-card__includes">
+              <li>Professional nail prep</li>
+              <li>Gel polish application</li>
+              <li>LED curing</li>
+              <li>Hydration finish</li>
+            </ul>
+            <div class="service-card__price">$80</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card featured">
+            <div class="service-card__badge">Premium Strengthening</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">💎</div>
+              <span class="service-card__duration">~90–120 min</span>
+            </div>
             <h3>Structured Gel Manicure</h3>
-            <p>A precision gel manicure built with structured gel for strength, flexibility, and lasting shape. Nail prep, cuticle care, structure application, gel color of your choice, and a flawless finish. Chip-free &amp; nail-healthy.</p>
+            <p class="service-card__note">Builds structure on your natural nail — the healthy, drill-free alternative to acrylics.</p>
+            <ul class="service-card__includes">
+              <li>Ideal for growing natural nails</li>
+              <li>Added durability &amp; shape</li>
+              <li>Healthy acrylic alternative</li>
+              <li>Long-lasting gel finish</li>
+            </ul>
             <div class="service-card__price">$115</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
-          <article class="service-card">
-            <div class="service-card__icon">💎</div>
+        </div>
+
+        <!-- ===== GEL-X ===== -->
+        <div class="services__grid hidden" id="tab-gelx">
+          <article class="service-card featured">
+            <div class="service-card__badge">Signature Extension</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">💎</div>
+              <span class="service-card__duration">~2–2.5 hrs</span>
+            </div>
             <h3>Gel-X Full Set</h3>
-            <p>Soft gel extensions applied directly over your natural nails — no drills, no harsh filing, no damage. Beautiful length and shape with the health benefits of gel. Available in a wide range of lengths and shapes.</p>
+            <p class="service-card__note">Soft gel extensions — elegant, natural look with no drills, no harsh filing, no damage.</p>
+            <ul class="service-card__includes">
+              <li>Full nail prep</li>
+              <li>Gel-X tip application</li>
+              <li>Gel polish finish</li>
+              <li>Hydration treatment</li>
+            </ul>
             <div class="service-card__price">$145</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card">
+            <div class="service-card__meta">
+              <div class="service-card__icon">🔄</div>
+              <span class="service-card__duration">~90 min</span>
+            </div>
+            <h3>Gel-X Refresh / Fill</h3>
+            <p class="service-card__note">Maintenance appointment for existing Gel-X clients. Keeps your set fresh and nails healthy.</p>
+            <ul class="service-card__includes">
+              <li>Grow-out fill</li>
+              <li>Shape refinement</li>
+              <li>Fresh gel polish finish</li>
+            </ul>
+            <div class="service-card__price">$95</div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card">
+            <div class="service-card__meta">
+              <div class="service-card__icon">🌿</div>
+              <span class="service-card__duration">~30–45 min</span>
+            </div>
+            <h3>Gel-X Removal + Nail Recovery</h3>
+            <p class="service-card__note">Safe, gentle removal followed by a strengthening treatment to restore your natural nail health.</p>
+            <ul class="service-card__includes">
+              <li>Gentle steam removal</li>
+              <li>Nail strengthening treatment</li>
+              <li>Hydration recovery</li>
+            </ul>
+            <div class="service-card__price">$40</div>
             <a href="#booking" class="service-card__link">Book This</a>
           </article>
         </div>
 
+        <!-- ===== COMBOS ===== -->
+        <div class="services__grid hidden" id="tab-combos">
+          <article class="service-card">
+            <div class="service-card__meta">
+              <div class="service-card__icon">🤝</div>
+              <span class="service-card__duration">~1.75 hrs</span>
+            </div>
+            <h3>Manicure + Essential Pedicure</h3>
+            <ul class="service-card__includes">
+              <li>Mobile Manicure</li>
+              <li>Essential Mobile Pedicure</li>
+            </ul>
+            <div class="service-card__price">$155 <span class="service-card__savings">Save $10</span></div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card featured">
+            <div class="service-card__badge">Great Value</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">🌸</div>
+              <span class="service-card__duration">~2.5 hrs</span>
+            </div>
+            <h3>Gel Manicure + Comfort Pedicure</h3>
+            <ul class="service-card__includes">
+              <li>Gel Mobile Manicure</li>
+              <li>Comfort &amp; Renew Pedicure</li>
+            </ul>
+            <div class="service-card__price">$185 <span class="service-card__savings">Save $10</span></div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card featured">
+            <div class="service-card__badge">Premium Combo</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">💅</div>
+              <span class="service-card__duration">~3+ hrs</span>
+            </div>
+            <h3>Structured Gel + Comfort Pedicure</h3>
+            <ul class="service-card__includes">
+              <li>Structured Gel Manicure</li>
+              <li>Comfort &amp; Renew Pedicure</li>
+            </ul>
+            <div class="service-card__price">$215 <span class="service-card__savings">Save $10</span></div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+          <article class="service-card featured service-card--wellness">
+            <div class="service-card__badge">Highest Value</div>
+            <div class="service-card__meta">
+              <div class="service-card__icon">👑</div>
+              <span class="service-card__duration">~3.5 hrs</span>
+            </div>
+            <h3>Signature Wellness Combo</h3>
+            <ul class="service-card__includes">
+              <li>Restore &amp; Relax Signature Pedicure</li>
+              <li>Gel Mobile Manicure</li>
+              <li>Warm towel ritual</li>
+              <li>Extended relaxation experience</li>
+            </ul>
+            <div class="service-card__price">$225 <span class="service-card__savings">Save $10</span></div>
+            <a href="#booking" class="service-card__link">Book This</a>
+          </article>
+        </div>
+
+        <!-- ===== ADD-ONS ===== -->
+        <div class="addons-grid hidden" id="tab-addons">
+          <div class="addon-card">
+            <span class="addon-card__icon">🌿</span>
+            <div><strong>CBD Relaxation Massage</strong><span>Deep calm &amp; muscle relief</span></div>
+            <span class="addon-card__price">+$20</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">✨</span>
+            <div><strong>Exfoliating Sugar Scrub</strong><span>Smooth, radiant skin</span></div>
+            <span class="addon-card__price">+$15</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">🕯️</span>
+            <div><strong>Warm Towel &amp; Aromatherapy</strong><span>Relaxing sensory ritual</span></div>
+            <span class="addon-card__price">+$10</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">⏱️</span>
+            <div><strong>Extended Massage (10 min)</strong><span>Extra relaxation time</span></div>
+            <span class="addon-card__price">+$20</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">💅</span>
+            <div><strong>Gel Polish Upgrade</strong><span>Long-lasting chip-free color</span></div>
+            <span class="addon-card__price">+$15</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">🌱</span>
+            <div><strong>Vegan / Low-Toxin Polish</strong><span>Included on premium services</span></div>
+            <span class="addon-card__price">+$5 basic</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">💨</span>
+            <div><strong>Steam Gel Removal</strong><span>Gentle, damage-free removal</span></div>
+            <span class="addon-card__price">+$15</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">💧</span>
+            <div><strong>Deep Hydration Foot Mask</strong><span>Intensive moisture treatment</span></div>
+            <span class="addon-card__price">+$15</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">🤍</span>
+            <div><strong>French Finish</strong><span>Classic clean-tip look</span></div>
+            <span class="addon-card__price">+$10</span>
+          </div>
+          <div class="addon-card">
+            <span class="addon-card__icon">🎨</span>
+            <div><strong>Nail Art (Simple)</strong><span>Designs, accents &amp; patterns</span></div>
+            <span class="addon-card__price">+$10–20</span>
+          </div>
+        </div>
+
+        <!-- ===== MONTHLY MAINTENANCE ===== -->
+        <div class="maintenance-card">
+          <div class="maintenance-card__icon">🔁</div>
+          <div class="maintenance-card__content">
+            <div class="section__tag" style="margin-bottom:0.5rem;">Monthly Program</div>
+            <h3>Reserved Monthly Care Plan</h3>
+            <p>Skip the booking hassle. Lock in your recurring appointment and enjoy priority scheduling every 4–5 weeks — your nails always look their best.</p>
+            <ul class="maintenance-card__perks">
+              <li>Reserved recurring appointment slot</li>
+              <li>Priority scheduling over new clients</li>
+              <li>Consistent professional nail care</li>
+              <li>No last-minute scrambling to book</li>
+            </ul>
+          </div>
+          <div class="maintenance-card__cta">
+            <div class="maintenance-card__price">$95–$115<span>/visit</span></div>
+            <a href="#booking" class="btn btn--primary">Reserve My Spot</a>
+            <p>Recommended every 4–5 weeks</p>
+          </div>
+        </div>
+
         <div class="services__note">
-          <p>💡 <strong>Group &amp; Event Pricing Available</strong> — Bridal parties, birthdays, bachelorettes &amp; corporate events. <a href="#booking">Get a quote</a>.</p>
+          <p>💡 <strong>Group &amp; Event Pricing Available</strong> — Bridal parties, birthdays, bachelorettes &amp; corporate events anywhere in Butte County. <a href="#booking">Get a quote</a>.</p>
         </div>
       </div>
     </section>
@@ -782,13 +1060,27 @@
                   <option value="Essential Mobile Pedicure — $75">Essential Mobile Pedicure — $75</option>
                   <option value="Comfort &amp; Renew Pedicure — $105">Comfort &amp; Renew Pedicure — $105 ⭐</option>
                   <option value="Restore &amp; Relax Signature Pedicure — $125">Restore &amp; Relax Signature Pedicure — $125 ⭐</option>
+                  <option value="Senior-Friendly Comfort Pedicure — $105">Senior-Friendly Comfort Pedicure — $105</option>
                 </optgroup>
-                <optgroup label="Manicures &amp; Extensions">
+                <optgroup label="Manicures">
+                  <option value="Mobile Manicure — $55">Mobile Manicure — $55</option>
+                  <option value="Gel Mobile Manicure — $80">Gel Mobile Manicure — $80 ⭐</option>
                   <option value="Structured Gel Manicure — $115">Structured Gel Manicure — $115 ⭐</option>
-                  <option value="Gel-X Full Set — $145">Gel-X Full Set — $145</option>
                 </optgroup>
-                <optgroup label="Events &amp; Other">
-                  <option value="Group / Event Booking (multiple services)">Group / Event Booking</option>
+                <optgroup label="Gel-X Extensions">
+                  <option value="Gel-X Full Set — $145">Gel-X Full Set — $145</option>
+                  <option value="Gel-X Refresh / Fill — $95">Gel-X Refresh / Fill — $95</option>
+                  <option value="Gel-X Removal + Nail Recovery — $40">Gel-X Removal + Nail Recovery — $40</option>
+                </optgroup>
+                <optgroup label="Combos">
+                  <option value="Manicure + Essential Pedicure — $155">Manicure + Essential Pedicure — $155</option>
+                  <option value="Gel Manicure + Comfort Pedicure — $185">Gel Manicure + Comfort Pedicure — $185</option>
+                  <option value="Structured Gel + Comfort Pedicure — $215">Structured Gel + Comfort Pedicure — $215</option>
+                  <option value="Signature Wellness Combo — $225">Signature Wellness Combo — $225 ⭐</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="Monthly Care Plan (recurring)">Monthly Care Plan — $95–115/visit</option>
+                  <option value="Group / Event Booking">Group / Event Booking</option>
                   <option value="Not sure — need a recommendation">Not Sure — Need a Recommendation</option>
                 </optgroup>
               </select>
